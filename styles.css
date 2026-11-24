@@ -299,7 +299,7 @@ h2 {
   object-position: center top;
   background: var(--wash);
 }
-.organizer-list .organizer-portrait-cutout { padding-top: 4px; object-position: center bottom; }
+.organizer-list .organizer-portrait-cutout { padding: 8px 4px 0; object-fit: contain; object-position: center bottom; }
 .organizer-list h4 { margin-top: 8px; font-size: 16px; font-weight: 600; line-height: 1.35; }
 .organizer-list h4 a { text-decoration-color: var(--rule); }
 .organizer-list h4 a:hover { text-decoration-color: currentColor; }
