@@ -274,8 +274,18 @@ h2 {
   gap: 24px;
 }
 .organizer-group {
+  position: relative;
   padding-top: 14px;
   border-top: 1px solid var(--rule);
+}
+.organizer-group + .organizer-group::before {
+  content: "";
+  position: absolute;
+  top: 49px;
+  bottom: 4px;
+  left: -12px;
+  width: 1px;
+  background: var(--rule);
 }
 .organizer-role {
   margin-bottom: 14px;
@@ -327,6 +337,7 @@ h2 {
 }
 @media (max-width: 800px) {
   .organizer-groups { grid-template-columns: 1fr; gap: 20px; }
+  .organizer-group + .organizer-group::before { display: none; }
   .organizer-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .organizer-heading .text-link { margin-top: 0; }
 }
