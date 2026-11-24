@@ -303,8 +303,8 @@ h2 {
 .organizer-list li:only-child { grid-column: 1 / -1; }
 .organizer-list img {
   display: block;
-  width: 80px;
-  height: 80px;
+  width: 96px;
+  height: 96px;
   margin-inline: auto;
   border-radius: 50%;
   object-fit: cover;
